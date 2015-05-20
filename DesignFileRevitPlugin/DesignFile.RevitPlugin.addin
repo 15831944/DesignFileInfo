@@ -1,0 +1,10 @@
+﻿<RevitAddIns>
+  <AddIn Type="Application">
+    <Assembly>DesignFile.RevitPlugin.dll</Assembly>
+    <ClientId>588c8c97-5e54-43a9-8b53-a8f5fcc8bc44</ClientId>
+    <FullClassName>DesignFile.RevitPlugin.UI</FullClassName>
+    <Name>Linked File Information</Name>
+    <VendorId>DJP</VendorId>
+    <VendorDescription/>
+  </AddIn>
+</RevitAddIns>
