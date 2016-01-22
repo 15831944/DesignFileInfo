@@ -291,12 +291,12 @@ namespace DesignFile.RevitPlugin
 
  	        //Set up the button in the ribbon
             String path = System.Reflection.Assembly.GetExecutingAssembly().Location;
-            String caption = "Linked File Information";
+            String caption = "Linked\nFile\nInformation";
             PushButtonData d = new PushButtonData(caption, caption, path, "DesignFile.RevitPlugin.Commands");
             d.AvailabilityClassName = "DesignFile.RevitPlugin.Availability";
 
             //Add Panel and Button
-            RibbonPanel p = application.CreateRibbonPanel(caption);
+            RibbonPanel p = application.CreateRibbonPanel("Linked File Information");
             PushButton b = p.AddItem(d) as PushButton;
             b.ToolTip = "Opens a folder of Revit files and lists the linked reference files.";
 

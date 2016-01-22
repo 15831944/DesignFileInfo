@@ -79,6 +79,9 @@ namespace DesignFile.Info
         public string Version { get; set; }
         public string RawData { get; set; }
         public string[] LinkedFiles { get; set; }
+        public bool IsEMR { get; set; } 
+
+
 
         public string ToString()
         {

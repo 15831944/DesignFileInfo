@@ -194,26 +194,26 @@ namespace DesignFile.Info
         {
             string ret = string.Empty;
 
-            if (Links.Count == 0)
-            {
+            //if (Links.Count == 0)
+            //{
                 ret += "\"" + FileName + "\",";
                 ret += "\"" + Version + "\",";
                 ret += "\"" + Convert.ToString(IsCentral) + "\",";
                 ret += "\"" + CentralFileName + "\",";
-            }
-            else
-            {
-                foreach (RevitLink link in Links)
-                {
-                    ret += "\"" + FileName + "\",";
-                    ret += "\"" + Version + "\",";
-                    ret += "\"" + Convert.ToString(IsCentral) + "\",";
-                    ret += "\"" + CentralFileName + "\",";
-                    ret += "\"" + link.LinkType + "\",";
-                    ret += "\"" + link.Path + "\",";
-                    ret += "\"" + link.AbsolutePath + "\",";
-                }
-            }
+            //}
+            //else
+            //{
+            //    foreach (RevitLink link in Links)
+            //    {
+            //        ret += "\"" + FileName + "\",";
+            //        ret += "\"" + Version + "\",";
+            //        ret += "\"" + Convert.ToString(IsCentral) + "\",";
+            //        ret += "\"" + CentralFileName + "\",";
+            //        ret += "\"" + link.LinkType + "\",";
+            //        ret += "\"" + link.Path + "\",";
+            //        ret += "\"" + link.AbsolutePath + "\",";
+            //    }
+            //}
 
             return ret;
         }

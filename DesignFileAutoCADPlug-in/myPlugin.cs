@@ -8,7 +8,7 @@ using Autodesk.AutoCAD.Geometry;
 using Autodesk.AutoCAD.EditorInput;
 
 // This line is not mandatory, but improves loading performances
-[assembly: ExtensionApplication(typeof(DesignFileAutoCADPlug_in.MyPlugin))]
+[assembly: ExtensionApplication(typeof(DesignFileAutoCADPlug_in.Addin))]
 
 namespace DesignFileAutoCADPlug_in
 {
@@ -16,7 +16,7 @@ namespace DesignFileAutoCADPlug_in
     // This class is instantiated by AutoCAD once and kept alive for the 
     // duration of the session. If you don't do any one time initialization 
     // then you should remove this class.
-    public class MyPlugin : IExtensionApplication
+    public class Addin : IExtensionApplication
     {
 
         void IExtensionApplication.Initialize()
