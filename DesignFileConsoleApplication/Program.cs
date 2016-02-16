@@ -75,7 +75,8 @@ namespace DesignFileConsoleApplication
                         using (System.IO.StreamWriter file = new System.IO.StreamWriter(fdCSVPath.FileName, true))
                         {
                             file.WriteLine(DateTime.Now);
-                            file.WriteLine("\"File Name\",\"Version\",\"Is Central\",\"Central File Name\",\"Link Type\",\"Path\",\"Absolute Path\"");
+                            //file.WriteLine("\"File Name\",\"Version\",\"Is Central\",\"Central File Name\",\"Link Type\",\"Path\",\"Absolute Path\"");
+                            file.WriteLine("\"File Name\",\"Version\",\"Is Central\",\"Central File Name\"");
                         }
 
                         //using (System.IO.StreamWriter file = new System.IO.StreamWriter(rootDirInfo.FullName + "\\DesignFiles_AutoCADFiles.csv", true))
